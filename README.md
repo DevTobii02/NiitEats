@@ -1,2 +1,2 @@
 # NiitEats
-fullstack e-commerce  food website where users can browse order and pay for food items      
+fullstack e-commerce  website built with php, JWT, MySQL as the back end and React, CSS and React Router on the frontend 
