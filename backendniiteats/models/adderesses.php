@@ -1,0 +1,1 @@
+// corresponds to adderes table in database
