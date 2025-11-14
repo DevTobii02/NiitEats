@@ -1,0 +1,6 @@
+- [x] Fix syntax error in AuthController.php login method return statement
+- [x] Modify login method to generate and return JWT token
+- [x] Update AuthMiddleware.php to validate JWT token instead of sessions
+- [x] Apply AuthMiddleware to protected routes in routes/api.php
+- [ ] Test login endpoint for success message and token
+- [ ] Test protected routes require valid token

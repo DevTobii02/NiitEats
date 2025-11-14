@@ -1,0 +1,14 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+
+# Handle API routes
+RewriteRule ^api/(.*)$ routes/api.php?endpoint=$1 [QSA,L]
+
+# Handle root requests
+RewriteRule ^$ index.php [L]
+
+# Handle other requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
