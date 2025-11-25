@@ -23,8 +23,7 @@ class AuthController {
         // Hash the password securely
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-        // ✅ Adjust column name depending on your database table
-        // If your table column is "username", use that instead of "name"
+        
         $stmt = $this->conn->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
         $stmt->bindParam(':username', $username);
         $stmt->bindParam(':email', $email);

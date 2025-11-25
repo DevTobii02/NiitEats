@@ -8,12 +8,11 @@ require_once __DIR__ . '/../controllers/AuthController.php';
 require_once __DIR__ . '/../controllers/ProductController.php';
 require_once __DIR__ . '/../controllers/CategoriesController.php';
 
-// Include middleware (optional)
+
 require_once __DIR__ . '/../middleware/AuthMiddleware.php';
 
 header('Content-Type: application/json');
 
-// Get the requested endpoint and method
 $endpoint = $_GET['endpoint'] ?? '';
 $method = $_SERVER['REQUEST_METHOD'];
 
