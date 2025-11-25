@@ -1,0 +1,3 @@
+- [x] Update LoadingScreen.jsx: Fix background image path to '/loadingscreenhamburger.png', update img src, enhance text styling
+- [x] Update index.css: Fix animation class names to match component usage
+- [x] Test the loading screen to ensure animations and images display correctly (dev server running on http://localhost:5175)
